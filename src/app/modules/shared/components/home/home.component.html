@@ -1,0 +1,53 @@
+<h1>TEAMS</h1>
+<div style="columns:4">
+    <div *ngFor="let team of (this.mainService.teams$ | async)">
+        <span>{{ team.id }}</span> -
+        <span>{{ team.name}}</span>
+    </div>
+</div>
+<hr>
+
+<h1>GAMES</h1>
+<div style="columns: 2">
+    <div *ngFor="let game of (this.mainService.games$ | async)">
+        <span>{{ game.EventDate }}</span> =>
+        <span>{{ game.ParticipantHome.name }} </span>
+        <span>{{ game.ScoreHome }} </span>
+        <span> X </span>
+        <span>{{ game.ScoreVisitors }} </span>
+        <span>{{ game.ParticipantVisitors.name }} </span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<hr>
+
+<!--
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>Data</th>
+                <th>Home Team</th>
+                <th>Home Score </th>
+                <th> X </th>
+                <th>Visitors Score </th>
+                <th>Visitor Team</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let game of (this.mainService.games$ | async)">
+                <td>{{ game.EventDate }}</td>
+                <td>{{ game.ParticipantHome.name }} </td>
+                <td>{{ game.ScoreHome }} </td>
+                <td> X </td>
+                <td>{{ game.ScoreVisitors }} </td>
+                <td>{{ game.ParticipantVisitors.name }} </td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+-->
