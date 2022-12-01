@@ -1,0 +1,58 @@
+.green-color {
+    color: green;
+    font-weight: bolder;
+}
+
+.red-color {
+    color: red;
+    font-weight: bolder;
+}
+
+.blue-color {
+    color: blue;
+    font-weight: bolder;
+}
+
+.black-color {
+    color: black;
+    font-weight: bolder;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+table {
+    background-color: lightyellow;
+}
+table > thead > tr > th {
+    background-color: black;
+    color: white;
+}
+
+table > tbody > tr:nth-child(odd) + tr {
+    background-color:whitesmoke;
+ }
+
+.teams-columms {
+    background-color: black;
+    color:white;
+}
+
+.team-color {
+    background-color: gray;
+    color: yellow;
+}
+
+.games-color {
+    background-color: lightblue;    
+}
+
+.goals-color {
+    background-color: lightsteelblue;
+}
+
+.points-color {
+    background-color: gray;
+    color: white
+}

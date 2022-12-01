@@ -1,0 +1,277 @@
+    <h1>SCOREBOARD</h1>
+
+    <div *ngFor="let grouped of (this.mainService.scoreboardGroupCache)" style="columns: 2">
+
+        <span *ngIf="grouped['PhaseOneGroupA'] !== null && grouped['PhaseOneGroupA'] !== undefined">
+            <h2>Group A</h2>                
+            <td>
+                <table cellspacing="1" cellspadding="1" border="1" >
+                    <thead>
+                        <th>TEAM</th>
+                        <th></th>
+                        <th>GAMES</th>
+                        <th>WINS</th>
+                        <th>DRAWS</th>
+                        <th>LOOSES</th>
+                        <th>GOALS</th>
+                        <th>AGAINST GOALS</th>
+                        <th>INVOICE GOALS</th>
+                        <th>POINTS</th>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of grouped['PhaseOneGroupA']">                        
+                            <td class="team-color green-blue">{{ item.participant.name }}</td>
+                            <td class="team-color"><img [src]="item.participant.flag" /></td>
+                            <td class="games-color text-align-center green-blue">{{ item.Games }}</td>
+                            <td class="games-color text-align-center green-color">{{ item.Wins }}</td>
+                            <td class="games-color text-align-center black-color">{{ item.Draw }}</td>
+                            <td class="games-color text-align-center red-color">{{ item.Looses }}</td>
+                            <td class="goals-color text-align-center blue-color">{{ item.Goals }}</td>
+                            <td class="goals-color text-align-center red-color">{{ item.AgainstGoals }}</td>
+                            <td [ngClass]="item.InvoiceGoals > 0 ? 'goals-color text-align-center blue-color': 'goals-color text-align-center red-color'">{{ item.InvoiceGoals }}</td>
+                            <td class="points-color text-align-center green-color">{{ item.Points }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </span>
+
+        <span *ngIf="grouped['PhaseOneGroupB'] !== null && grouped['PhaseOneGroupB'] !== undefined">
+            <h2>Group B</h2>                
+            <td>
+                <table cellspacing="1" cellspadding="1" border="1" >
+                    <thead>
+                        <th>TEAM</th>
+                        <th></th>
+                        <th>GAMES</th>
+                        <th>WINS</th>
+                        <th>DRAWS</th>
+                        <th>LOOSES</th>
+                        <th>GOALS</th>
+                        <th>AGAINST GOALS</th>
+                        <th>INVOICE GOALS</th>
+                        <th>POINTS</th>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of grouped['PhaseOneGroupB']">                        
+                            <td class="team-color green-blue">{{ item.participant.name }}</td>
+                            <td class="team-color"><img [src]="item.participant.flag" /></td>
+                            <td class="games-color text-align-center green-blue">{{ item.Games }}</td>
+                            <td class="games-color text-align-center green-color">{{ item.Wins }}</td>
+                            <td class="games-color text-align-center black-color">{{ item.Draw }}</td>
+                            <td class="games-color text-align-center red-color">{{ item.Looses }}</td>
+                            <td class="goals-color text-align-center blue-color">{{ item.Goals }}</td>
+                            <td class="goals-color text-align-center red-color">{{ item.AgainstGoals }}</td>
+                            <td [ngClass]="item.InvoiceGoals > 0 ? 'goals-color text-align-center blue-color': 'goals-color text-align-center red-color'">{{ item.InvoiceGoals }}</td>
+                            <td class="points-color text-align-center green-color">{{ item.Points }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </span>
+
+        <span *ngIf="grouped['PhaseOneGroupC'] !== null && grouped['PhaseOneGroupC'] !== undefined">
+            <h2>Group C</h2>                
+            <td>
+                <table cellspacing="1" cellspadding="1" border="1" >
+                    <thead>
+                        <th>TEAM</th>
+                        <th></th>
+                        <th>GAMES</th>
+                        <th>WINS</th>
+                        <th>DRAWS</th>
+                        <th>LOOSES</th>
+                        <th>GOALS</th>
+                        <th>AGAINST GOALS</th>
+                        <th>INVOICE GOALS</th>
+                        <th>POINTS</th>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of grouped['PhaseOneGroupC']">                        
+                            <td class="team-color green-blue">{{ item.participant.name }}</td>
+                            <td class="team-color"><img [src]="item.participant.flag" /></td>
+                            <td class="games-color text-align-center green-blue">{{ item.Games }}</td>
+                            <td class="games-color text-align-center green-color">{{ item.Wins }}</td>
+                            <td class="games-color text-align-center black-color">{{ item.Draw }}</td>
+                            <td class="games-color text-align-center red-color">{{ item.Looses }}</td>
+                            <td class="goals-color text-align-center blue-color">{{ item.Goals }}</td>
+                            <td class="goals-color text-align-center red-color">{{ item.AgainstGoals }}</td>
+                            <td [ngClass]="item.InvoiceGoals > 0 ? 'goals-color text-align-center blue-color': 'goals-color text-align-center red-color'">{{ item.InvoiceGoals }}</td>
+                            <td class="points-color text-align-center green-color">{{ item.Points }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </span>
+        <span *ngIf="grouped['PhaseOneGroupD'] !== null && grouped['PhaseOneGroupD'] !== undefined">
+            <h2>Group D</h2>                
+            <td>
+                <table cellspacing="1" cellspadding="1" border="1" >
+                    <thead>
+                        <th>TEAM</th>
+                        <th></th>
+                        <th>GAMES</th>
+                        <th>WINS</th>
+                        <th>DRAWS</th>
+                        <th>LOOSES</th>
+                        <th>GOALS</th>
+                        <th>AGAINST GOALS</th>
+                        <th>INVOICE GOALS</th>
+                        <th>POINTS</th>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of grouped['PhaseOneGroupD']">                        
+                            <td class="team-color green-blue">{{ item.participant.name }}</td>
+                            <td class="team-color"><img [src]="item.participant.flag" /></td>
+                            <td class="games-color text-align-center green-blue">{{ item.Games }}</td>
+                            <td class="games-color text-align-center green-color">{{ item.Wins }}</td>
+                            <td class="games-color text-align-center black-color">{{ item.Draw }}</td>
+                            <td class="games-color text-align-center red-color">{{ item.Looses }}</td>
+                            <td class="goals-color text-align-center blue-color">{{ item.Goals }}</td>
+                            <td class="goals-color text-align-center red-color">{{ item.AgainstGoals }}</td>
+                            <td [ngClass]="item.InvoiceGoals > 0 ? 'goals-color text-align-center blue-color': 'goals-color text-align-center red-color'">{{ item.InvoiceGoals }}</td>
+                            <td class="points-color text-align-center green-color">{{ item.Points }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </span>
+        <br>
+        <br>
+        <br>
+        <span *ngIf="grouped['PhaseOneGroupE'] !== null && grouped['PhaseOneGroupE'] !== undefined">
+            <h2>Group E</h2>                
+            <td>
+                <table cellspacing="1" cellspadding="1" border="1" >
+                    <thead>
+                        <th>TEAM</th>
+                        <th></th>
+                        <th>GAMES</th>
+                        <th>WINS</th>
+                        <th>DRAWS</th>
+                        <th>LOOSES</th>
+                        <th>GOALS</th>
+                        <th>AGAINST GOALS</th>
+                        <th>INVOICE GOALS</th>
+                        <th>POINTS</th>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of grouped['PhaseOneGroupE']">                        
+                            <td class="team-color green-blue">{{ item.participant.name }}</td>
+                            <td class="team-color"><img [src]="item.participant.flag" /></td>
+                            <td class="games-color text-align-center green-blue">{{ item.Games }}</td>
+                            <td class="games-color text-align-center green-color">{{ item.Wins }}</td>
+                            <td class="games-color text-align-center black-color">{{ item.Draw }}</td>
+                            <td class="games-color text-align-center red-color">{{ item.Looses }}</td>
+                            <td class="goals-color text-align-center blue-color">{{ item.Goals }}</td>
+                            <td class="goals-color text-align-center red-color">{{ item.AgainstGoals }}</td>
+                            <td [ngClass]="item.InvoiceGoals > 0 ? 'goals-color text-align-center blue-color': 'goals-color text-align-center red-color'">{{ item.InvoiceGoals }}</td>
+                            <td class="points-color text-align-center green-color">{{ item.Points }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </span>
+
+        <span *ngIf="grouped['PhaseOneGroupF'] !== null && grouped['PhaseOneGroupF'] !== undefined">
+            <h2>Group F</h2>                
+            <td>
+                <table cellspacing="1" cellspadding="1" border="1" >
+                    <thead>
+                        <th>TEAM</th>
+                        <th></th>
+                        <th>GAMES</th>
+                        <th>WINS</th>
+                        <th>DRAWS</th>
+                        <th>LOOSES</th>
+                        <th>GOALS</th>
+                        <th>AGAINST GOALS</th>
+                        <th>INVOICE GOALS</th>
+                        <th>POINTS</th>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of grouped['PhaseOneGroupF']">                        
+                            <td class="team-color green-blue">{{ item.participant.name }}</td>
+                            <td class="team-color"><img [src]="item.participant.flag" /></td>
+                            <td class="games-color text-align-center green-blue">{{ item.Games }}</td>
+                            <td class="games-color text-align-center green-color">{{ item.Wins }}</td>
+                            <td class="games-color text-align-center black-color">{{ item.Draw }}</td>
+                            <td class="games-color text-align-center red-color">{{ item.Looses }}</td>
+                            <td class="goals-color text-align-center blue-color">{{ item.Goals }}</td>
+                            <td class="goals-color text-align-center red-color">{{ item.AgainstGoals }}</td>
+                            <td [ngClass]="item.InvoiceGoals > 0 ? 'goals-color text-align-center blue-color': 'goals-color text-align-center red-color'">{{ item.InvoiceGoals }}</td>
+                            <td class="points-color text-align-center green-color">{{ item.Points }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </span>
+        <span *ngIf="grouped['PhaseOneGroupG'] !== null && grouped['PhaseOneGroupG'] !== undefined">
+            <h2>Group G</h2>                
+            <td>
+                <table cellspacing="1" cellspadding="1" border="1" >
+                    <thead>
+                        <th>TEAM</th>
+                        <th></th>
+                        <th>GAMES</th>
+                        <th>WINS</th>
+                        <th>DRAWS</th>
+                        <th>LOOSES</th>
+                        <th>GOALS</th>
+                        <th>AGAINST GOALS</th>
+                        <th>INVOICE GOALS</th>
+                        <th>POINTS</th>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of grouped['PhaseOneGroupG']">                        
+                            <td class="team-color green-blue">{{ item.participant.name }}</td>
+                            <td class="team-color"><img [src]="item.participant.flag" /></td>
+                            <td class="games-color text-align-center green-blue">{{ item.Games }}</td>
+                            <td class="games-color text-align-center green-color">{{ item.Wins }}</td>
+                            <td class="games-color text-align-center black-color">{{ item.Draw }}</td>
+                            <td class="games-color text-align-center red-color">{{ item.Looses }}</td>
+                            <td class="goals-color text-align-center blue-color">{{ item.Goals }}</td>
+                            <td class="goals-color text-align-center red-color">{{ item.AgainstGoals }}</td>
+                            <td [ngClass]="item.InvoiceGoals > 0 ? 'goals-color text-align-center blue-color': 'goals-color text-align-center red-color'">{{ item.InvoiceGoals }}</td>
+                            <td class="points-color text-align-center green-color">{{ item.Points }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </span>
+        <span *ngIf="grouped['PhaseOneGroupH'] !== null && grouped['PhaseOneGroupH'] !== undefined">
+            <h2>Group H</h2>                
+            <td>
+                <table cellspacing="1" cellspadding="1" border="1" >
+                    <thead>
+                        <th>TEAM</th>
+                        <th></th>
+                        <th>GAMES</th>
+                        <th>WINS</th>
+                        <th>DRAWS</th>
+                        <th>LOOSES</th>
+                        <th>GOALS</th>
+                        <th>AGAINST GOALS</th>
+                        <th>INVOICE GOALS</th>
+                        <th>POINTS</th>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of grouped['PhaseOneGroupH']">                        
+                            <td class="team-color green-blue">{{ item.participant.name }}</td>
+                            <td class="team-color"><img [src]="item.participant.flag" /></td>
+                            <td class="games-color text-align-center green-blue">{{ item.Games }}</td>
+                            <td class="games-color text-align-center green-color">{{ item.Wins }}</td>
+                            <td class="games-color text-align-center black-color">{{ item.Draw }}</td>
+                            <td class="games-color text-align-center red-color">{{ item.Looses }}</td>
+                            <td class="goals-color text-align-center blue-color">{{ item.Goals }}</td>
+                            <td class="goals-color text-align-center red-color">{{ item.AgainstGoals }}</td>
+                            <td [ngClass]="item.InvoiceGoals > 0 ? 'goals-color text-align-center blue-color': 'goals-color text-align-center red-color'">{{ item.InvoiceGoals }}</td>
+                            <td class="points-color text-align-center green-color">{{ item.Points }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </span>
+        
+    </div>
+
