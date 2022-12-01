@@ -337,8 +337,8 @@
 
         "ParticipantHome": { "id": 2, "name": "Brazil", "country": "Brazil", "flag": "br.png" },
         "ParticipantVisitors": { "id": 27, "name": "Switzerland", "country": "Switzerland", "flag": "sw.png" },
-        "ScoreHome": 0,
-        "ScoreVisitors": 2
+        "ScoreHome": 1,
+        "ScoreVisitors": 0
     },
     {
         "id": 26,
@@ -426,7 +426,7 @@
         "ParticipantHome": { "id": 11, "name": "Polonia", "country": "Polonia", "flag": "po.png" },
         "ParticipantVisitors": { "id": 12, "name": "Argentina", "country": "Argentina", "flag": "ar.png" },
         "ScoreHome": 0,
-        "ScoreVisitors": 0
+        "ScoreVisitors": 2
     },
     {
         "id": 32,
@@ -436,8 +436,8 @@
 
         "ParticipantHome": { "id": 13, "name": "Arábia Saudita", "country": "Arábia Saudita", "flag": "uae.png" },
         "ParticipantVisitors": { "id": 14, "name": "Mexico", "country": "Mexico", "flag": "mx.png" },
-        "ScoreHome": 0,
-        "ScoreVisitors": 0
+        "ScoreHome": 1,
+        "ScoreVisitors": 2
     },
     {
         "id": 33,

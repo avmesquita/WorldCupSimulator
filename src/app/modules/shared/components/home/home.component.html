@@ -22,32 +22,34 @@
 </div>
 <hr>
 
-<!--
+<h1>scoreboard</h1>
 <div>
-    <table>
+    <table style="width:100%;" cellspacing="2" cellpadding="2" border="1">
         <thead>
             <tr>
-                <th>Data</th>
-                <th>Home Team</th>
-                <th>Home Score </th>
-                <th> X </th>
-                <th>Visitors Score </th>
-                <th>Visitor Team</th>
-                <th></th>
+                <th>TEAM</th>
+                <th>GAMES</th>
+                <th>WIN</th>
+                <th>DRAW</th>
+                <th>LOSES</th>
+                <th>GOALS</th>
+                <th>AGAINT</th>
+                <th>GOALS RESULT</th>
+                <th>POINTS</th>
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let game of (this.mainService.games$ | async)">
-                <td>{{ game.EventDate }}</td>
-                <td>{{ game.ParticipantHome.name }} </td>
-                <td>{{ game.ScoreHome }} </td>
-                <td> X </td>
-                <td>{{ game.ScoreVisitors }} </td>
-                <td>{{ game.ParticipantVisitors.name }} </td>
-                <td></td>
-                <td></td>
+            <tr *ngFor="let scoreboard of (this.mainService.scoreboard$ | async)">
+                <td>{{ scoreboard.participant.name }} </td>
+                <td>{{ scoreboard.Games }}</td>
+                <td>{{ scoreboard.Wins }}</td>
+                <td>{{ scoreboard.Draw }}</td>
+                <td>{{ scoreboard.Looses }}</td>
+                <td>{{ scoreboard.Goals }}</td>
+                <td>{{ scoreboard.AgainstGoals }}</td>
+                <td>{{ scoreboard.InvoiceGoals }}</td>
+                <td>{{ scoreboard.Points }}</td>
             </tr>
         </tbody>
     </table>
 </div>
--->
