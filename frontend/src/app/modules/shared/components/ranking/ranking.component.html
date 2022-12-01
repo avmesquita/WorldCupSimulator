@@ -4,6 +4,7 @@
         <thead>
             <tr>
                 <th>TEAM</th>
+                <th></th>
                 <th>GAMES</th>
                 <th>WIN</th>
                 <th>DRAW</th>
@@ -17,6 +18,7 @@
         <tbody>
             <tr *ngFor="let scoreboard of (this.mainService.scoreboard$ | async)">
                 <td class="teams-columms">{{ scoreboard.participant.name }} </td>
+                <td class="text-align-center"><img [src]="scoreboard.participant.flag" /></td>
                 <td class="games-color text-align-center blue-color">{{ scoreboard.Games }}</td>
                 <td class="games-color text-align-center green-color">{{ scoreboard.Wins }}</td>
                 <td class="games-color text-align-center black-color">{{ scoreboard.Draw }}</td>

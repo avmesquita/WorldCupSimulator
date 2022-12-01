@@ -41,8 +41,12 @@ export class MainService {
   }
 
   loadRefresh(): void {
-    this.getAllParticipants().subscribe( (participants: IParticipant[]) => { this.teams.next(participants); });
-    this.getAllEvents().subscribe( (events: IEvent[]) => { this.games.next(events); });    
+    this.getAllParticipants().subscribe( (participants: IParticipant[]) => {       
+      this.teams.next(participants); 
+    });
+    this.getAllEvents().subscribe( (events: IEvent[]) => { 
+      this.games.next(events); 
+    });    
     this.proccessPhaseOneScoreboard();    
   }
 

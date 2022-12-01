@@ -3,192 +3,192 @@
         "id": 1,
         "name": "Portugal",
         "country": "Portugal",
-        "flag": "/assets/images/flags/48/pt.png"
+        "flag": "/assets/images/flags/32/pt.png"
     },
     {
         "id": 2,
         "name": "Brazil",
         "country": "Brazil",
-        "flag": "/assets/images/flags/48/br.png"
+        "flag": "/assets/images/flags/32/pt-br.png"
     },
     {
         "id": 3,
         "name": "USA",
         "country": "United States of America",
-        "flag": "/assets/images/flags/48/pt.png"
+        "flag": "/assets/images/flags/32/en-us.png"
     },
     {
         "id": 4,
         "name": "Deutchland",
         "country": "Deutchland",
-        "flag": "/assets/images/flags/48/de.png"
+        "flag": "/assets/images/flags/32/da.png"
     },
     {
         "id": 5,
         "name": "England",
         "country": "England",
-        "flag": "/assets/images/flags/48/gb.png"
+        "flag": "/assets/images/flags/32/kkkkk.png"
     },
     {
         "id": 6,
         "name": "Senegal",
         "country": "Senegal",
-        "flag": "/assets/images/flags/48/sg.png"
+        "flag": "/assets/images/flags/32/kkkkk.png"
     },
     {
         "id": 7,
         "name": "Equador",
         "country": "Equador",
-        "flag": "/assets/images/flags/48/eq.png"
+        "flag": "/assets/images/flags/32/kkkkk.png"
     },
     {
         "id": 8,
         "name": "Catar",
         "country": "Catar",
-        "flag": "/assets/images/flags/48/ct.png"
+        "flag": "/assets/images/flags/32/kkkkk.png"
     },
     {
         "id": 9,
         "name": "Iran",
         "country": "Iran",
-        "flag": "/assets/images/flags/48/ir.png"
+        "flag": "/assets/images/flags/32/fa.png"
     },
     {
         "id": 10,
         "name": "Wales",
         "country": "Wales",
-        "flag": "/assets/images/flags/48/wa.png"
+        "flag": "/assets/images/flags/32/cy.png"
     },
     {
         "id": 11,
         "name": "Polonia",
         "country": "Polonia",
-        "flag": "/assets/images/flags/48/po.png"
+        "flag": "/assets/images/flags/32/pl.png"
     },
     {
         "id": 12,
         "name": "Argentina",
         "country": "Argentina",
-        "flag": "/assets/images/flags/48/ar.png"
+        "flag": "/assets/images/flags/32/es-ar.png"
     },
     {
         "id": 13,
         "name": "Arábia Saudita",
         "country": "Arábia Saudita",
-        "flag": "/assets/images/flags/48/uae.png"
+        "flag": "/assets/images/flags/32/sd.png"
     },
     {
         "id": 14,
         "name": "Mexico",
         "country": "Mexico",
-        "flag": "/assets/images/flags/48/mx.png"
+        "flag": "/assets/images/flags/32/es-mx.png"
     },
     {
         "id": 15,
         "name": "França",
         "country": "França",
-        "flag": "/assets/images/flags/48/fr.png"
+        "flag": "/assets/images/flags/32/fr.png"
     },
     {
         "id": 16,
         "name": "Australia",
         "country": "Australia",
-        "flag": "/assets/images/flags/48/au.png"
+        "flag": "/assets/images/flags/32/kkkkk.png"
     },
     {
         "id": 17,
         "name": "Tunisia",
         "country": "Tunisia",
-        "flag": "/assets/images/flags/48/tu.png"
+        "flag": "/assets/images/flags/32/tr.png"
     },
     {
         "id": 18,
         "name": "Denmark",
         "country": "Denmark",
-        "flag": "/assets/images/flags/48/dk.png"
+        "flag": "/assets/images/flags/32/da.png"
     },
     {
         "id": 19,
         "name": "Spain",
         "country": "Spain",
-        "flag": "/assets/images/flags/48/es.png"
+        "flag": "/assets/images/flags/32/es.png"
     },
     {
         "id": 20,
         "name": "Japan",
         "country": "Japan",
-        "flag": "/assets/images/flags/48/jp.png"
+        "flag": "/assets/images/flags/32/ja.png"
     },
     {
         "id": 21,
         "name": "Costa Rica",
         "country": "Costa Rica",
-        "flag": "/assets/images/flags/48/pt.png"
+        "flag": "/assets/images/flags/32/kkkkk.png"
     },
     {
         "id": 22,
         "name": "Germany",
         "country": "Germany",
-        "flag": "/assets/images/flags/48/ge.png"
+        "flag": "/assets/images/flags/32/de.png"
     },
     {
         "id": 23,
         "name": "Croatia",
         "country": "Croatia",
-        "flag": "/assets/images/flags/48/cr.png"
+        "flag": "/assets/images/flags/32/hr.png"
     },
     {
         "id": 24,
         "name": "Marrocco",
         "country": "Marrocco",
-        "flag": "/assets/images/flags/48/mr.png"
+        "flag": "/assets/images/flags/32/kkkkk.png"
     },
     {
         "id": 25,
         "name": "Belgian",
         "country": "Belgian",
-        "flag": "/assets/images/flags/48/be.png"
+        "flag": "/assets/images/flags/32/kkkkk.png"
     },
     {
         "id": 26,
         "name": "Canada",
         "country": "Canada",
-        "flag": "/assets/images/flags/48/ca.png"
+        "flag": "/assets/images/flags/32/en-ca.png"
     },
     {
         "id": 27,
         "name": "Switzerland",
         "country": "Switzerland",
-        "flag": "/assets/images/flags/48/sw.png"
+        "flag": "/assets/images/flags/32/kkkkk.png"
     },
     {
         "id": 28,
         "name": "Cameroon",
         "country": "Cameroon",
-        "flag": "/assets/images/flags/48/cm.png"
+        "flag": "/assets/images/flags/32/kkkkk.png"
     },
     {
         "id": 29,
         "name": "Serbia",
         "country": "Serbia",
-        "flag": "/assets/images/flags/48/sb.png"
+        "flag": "/assets/images/flags/32/kkkkk.png"
     },
     {
         "id": 30,
         "name": "Gana",
         "country": "Gana",
-        "flag": "/assets/images/flags/48/ga.png"
+        "flag": "/assets/images/flags/32/kkkkk.png"
     },
     {
         "id": 31,
         "name": "South Korea",
         "country": "South Korea",
-        "flag": "/assets/images/flags/48/sw.png"
+        "flag": "/assets/images/flags/32/ko.png"
     },
     {
         "id": 32,
         "name": "Uruguai",
         "country": "Uruguai",
-        "flag": "/assets/images/flags/48/ur.png"
+        "flag": "/assets/images/flags/32/kkkkk.png"
     }
 ]
