@@ -5,8 +5,8 @@
         "Location": "Catar",
         "Group": "PhaseOneGroupA",
 
-        "ParticipantHome": { "id": 8, "name": "Catar", "country": "Catar", "flag": "ct.png" },
-        "ParticipantVisitors": { "id": 7, "name": "Equador", "country": "Equador", "flag": "eq.png" },
+        "ParticipantHome": { "id": 8, "name": "Catar", "country": "Catar", "flag": "/assets/images/flags/32/kkkkk.png" },
+        "ParticipantVisitors": { "id": 7, "name": "Equador", "country": "Equador", "flag": "/assets/images/flags/32/kkkkk.png" },
         "ScoreHome": 0,
         "ScoreVisitors": 2
     },
@@ -16,8 +16,8 @@
         "Location": "Catar",
         "Group": "PhaseOneGroupB",
 
-        "ParticipantHome": { "id": 5, "name": "England", "country": "England", "flag": "gb.png" },    
-        "ParticipantVisitors": { "id": 9, "name": "Iran", "country": "Iran", "flag": "ir.png" },    
+        "ParticipantHome": { "id": 5, "name": "England", "country": "England", "flag": "/assets/images/flags/32/kkkkk.png" },    
+        "ParticipantVisitors": { "id": 9, "name": "Iran", "country": "Iran", "flag": "/assets/images/flags/32/ir.png" },    
         "ScoreHome": 6,
         "ScoreVisitors": 2
     },
@@ -27,8 +27,8 @@
         "Location": "Catar",
         "Group": "PhaseOneGroupB",
 
-        "ParticipantHome": { "id": 3, "name": "USA", "country": "United States of America", "flag": "pt.png" },
-        "ParticipantVisitors": { "id": 10, "name": "Wales", "country": "Wales", "flag": "wa.png" },
+        "ParticipantHome": { "id": 3, "name": "USA", "country": "United States of America", "flag": "/assets/images/flags/32/en-us.png" },
+        "ParticipantVisitors": { "id": 10, "name": "Wales", "country": "Wales", "flag": "/assets/images/flags/32/cy.png" },
         "ScoreHome": 1,
         "ScoreVisitors": 1
     },
@@ -38,8 +38,8 @@
         "Location": "Catar",
         "Group": "PhaseOneGroupA",
 
-        "ParticipantHome": { "id": 6, "name": "Senegal", "country": "Senegal", "flag": "sg.png" },
-        "ParticipantVisitors": { "id": 4, "name": "Deutchland", "country": "Deutchland", "flag": "de.png" },
+        "ParticipantHome": { "id": 6, "name": "Senegal", "country": "Senegal", "flag": "/assets/images/flags/32/kkkkk.png" },
+        "ParticipantVisitors": { "id": 4, "name": "Deutchland", "country": "Deutchland", "flag": "/assets/images/flags/32/kkkkk.png" },
         "ScoreHome": 0,
         "ScoreVisitors": 2
     },
@@ -49,8 +49,8 @@
         "Location": "Catar",
         "Group": "PhaseOneGroupC",
 
-        "ParticipantHome": { "id": 12, "name": "Argentina", "country": "Argentina", "flag": "ar.png" },
-        "ParticipantVisitors": { "id": 13, "name": "Arábia Saudita", "country": "Arábia Saudita", "flag": "uae.png" },
+        "ParticipantHome": { "id": 12, "name": "Argentina", "country": "Argentina", "flag": "/assets/images/flags/32/es-ar.png" },
+        "ParticipantVisitors": { "id": 13, "name": "Arábia Saudita", "country": "Arábia Saudita", "flag": "/assets/images/flags/32/sd.png" },
         "ScoreHome": 1,
         "ScoreVisitors": 2
     },
@@ -60,8 +60,8 @@
         "Location": "Catar",
         "Group": "PhaseOneGroupC",
 
-        "ParticipantHome": { "id": 14, "name": "Mexico", "country": "Mexico", "flag": "mx.png" },
-        "ParticipantVisitors": { "id": 11, "name": "Polonia", "country": "Polonia", "flag": "po.png" },
+        "ParticipantHome": { "id": 14, "name": "Mexico", "country": "Mexico", "flag": "/assets/images/flags/32/es-mx.png" },
+        "ParticipantVisitors": { "id": 11, "name": "Polonia", "country": "Polonia", "flag": "/assets/images/flags/32/pl.png" },
         "ScoreHome": 0,
         "ScoreVisitors": 0
     },
@@ -71,8 +71,8 @@
         "Location": "Catar",
         "Group": "PhaseOneGroupD",
 
-        "ParticipantHome": { "id": 18, "name": "Denmark", "country": "Denmark", "flag": "dk.png" },
-        "ParticipantVisitors": { "id": 17, "name": "Tunisia", "country": "Tunisia", "flag": "tu.png" },
+        "ParticipantHome": { "id": 18, "name": "Denmark", "country": "Denmark", "flag": "/assets/images/flags/32/da.png" },
+        "ParticipantVisitors": { "id": 17, "name": "Tunisia", "country": "Tunisia", "flag": "/assets/images/flags/32/tr.png" },
         "ScoreHome": 0,
         "ScoreVisitors": 0
     },
@@ -82,8 +82,8 @@
         "Location": "Catar",
         "Group": "PhaseOneGroupD",
 
-        "ParticipantHome": { "id": 15, "name": "França", "country": "França", "flag": "fr.png" },
-        "ParticipantVisitors": { "id": 16, "name": "Australia", "country": "Australia", "flag": "au.png" },
+        "ParticipantHome": { "id": 15, "name": "França", "country": "França", "flag": "/assets/images/flags/32/fr.png" },
+        "ParticipantVisitors": { "id": 16, "name": "Australia", "country": "Australia", "flag": "/assets/images/flags/32/kkkkk.png" },
         "ScoreHome": 4,
         "ScoreVisitors": 1
     }, 
@@ -93,8 +93,8 @@
         "Location": "Catar",
         "Group": "PhaseOneGroupF",
 
-        "ParticipantHome": { "id": 24, "name": "Marrocco", "country": "Marrocco", "flag": "mr.png"},
-        "ParticipantVisitors": { "id": 23, "name": "Croatia", "country": "Croatia", "flag": "cr.png" },
+        "ParticipantHome": { "id": 24, "name": "Marrocco", "country": "Marrocco", "flag": "/assets/images/flags/32/kkkkk.png"},
+        "ParticipantVisitors": { "id": 23, "name": "Croatia", "country": "Croatia", "flag": "/assets/images/flags/32/hr.png" },
         "ScoreHome": 0,
         "ScoreVisitors": 0
     },
@@ -104,7 +104,7 @@
         "Location": "Catar",
         "Group": "PhaseOneGroupE",
 
-        "ParticipantHome": { "id": 19, "name": "Spain", "country": "Spain", "flag": "es.png" },
+        "ParticipantHome": { "id": 19, "name": "Spain", "country": "Spain", "flag": "/assets/images/flags/32/es.png" },
         "ParticipantVisitors": { "id": 21, "name": "Costa Rica", "country": "Costa Rica", "flag": "pt.png" },
         "ScoreHome": 7,
         "ScoreVisitors": 0
