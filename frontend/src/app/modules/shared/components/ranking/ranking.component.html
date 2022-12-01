@@ -1,0 +1,32 @@
+<h1>Ranking</h1>
+<div>
+    <table style="width:100%;" cellspacing="2" cellpadding="2" border="1">
+        <thead>
+            <tr>
+                <th>TEAM</th>
+                <th>GAMES</th>
+                <th>WIN</th>
+                <th>DRAW</th>
+                <th>LOSES</th>
+                <th>GOALS</th>
+                <th>AGAINT</th>
+                <th>GOALS RESULT</th>
+                <th>POINTS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let scoreboard of (this.mainService.scoreboard$ | async)">
+                <td class="teams-columms">{{ scoreboard.participant.name }} </td>
+                <td class="games-color text-align-center blue-color">{{ scoreboard.Games }}</td>
+                <td class="games-color text-align-center green-color">{{ scoreboard.Wins }}</td>
+                <td class="games-color text-align-center black-color">{{ scoreboard.Draw }}</td>
+                <td class="games-color text-align-center red-color">{{ scoreboard.Looses }}</td>
+                <td class="goals-color text-align-center green-color">{{ scoreboard.Goals }}</td>
+                <td class="goals-color text-align-center red-color">{{ scoreboard.AgainstGoals }}</td>
+                <td class="goals-color text-align-center blue-color">{{ scoreboard.InvoiceGoals }}</td>
+                <td class="text-align-center green-color">{{ scoreboard.Points }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
