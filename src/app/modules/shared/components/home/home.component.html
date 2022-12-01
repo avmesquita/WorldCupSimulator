@@ -53,3 +53,15 @@
         </tbody>
     </table>
 </div>
+
+<hr>
+
+<div>
+    <table>
+        <tr *ngFor="let grouped of (this.mainService.scoreboardGroupCache)">
+            <td>{{ this.mainService.lerObjecto(grouped) }}</td>
+
+        </tr>
+
+    </table>
+</div>

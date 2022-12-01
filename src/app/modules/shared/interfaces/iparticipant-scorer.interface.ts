@@ -2,6 +2,7 @@ import { IParticipant } from "./iparticipant.interface";
 
 export interface IParticipantScorer {
     participant: IParticipant,
+    Group: string;
     Games: number;
     Wins: number;
     Draw: number;

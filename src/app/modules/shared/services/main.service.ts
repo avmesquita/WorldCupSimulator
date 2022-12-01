@@ -19,6 +19,14 @@ export class MainService {
   public scoreboard$ = this.scoreboard.asObservable();
 
   private scoreboardCache: IParticipantScorer[] = [];
+  public scoreboardGroupCache: any = [];
+
+  groupBy = <T, K extends keyof any>(arr: T[], key: (i: T) => K) =>
+  arr.reduce((groups, item) => {
+    (groups[key(item)] ||= []).push(item);
+    return groups;
+  }, {} as Record<K, T[]>);
+
 
   constructor(private http: HttpClient) { 
     this.loadRefresh(); 
@@ -44,7 +52,7 @@ export class MainService {
     const localScorerboard: IParticipantScorer[] = [];
     this.teams.subscribe( ( t: IParticipant[] ) => {
       t.forEach( (item: IParticipant) => {
-        localScorerboard.push(this.createParticipantScorer(item,0,0,0,0,0,0,0,0));
+        localScorerboard.push(this.createParticipantScorer(item,0,0,0,0,0,0,0,0,''));
       });
       this.scoreboard.next(localScorerboard);
       console.log(" CREATE SCOREBOARD => ",this.scoreboard);
@@ -81,12 +89,14 @@ export class MainService {
           t1.Wins++;
           t1.Points = t1.Points + 3;
           t1.InvoiceGoals = t1.Goals - t1.AgainstGoals;
+          t1.Group = evento.Group;
           
           t2.Goals = t2.Goals + evento.ScoreVisitors;
           t2.AgainstGoals = t2.AgainstGoals + evento.ScoreHome;
           t2.Games++;
           t2.Looses++;
           t2.InvoiceGoals = t2.Goals - t2.AgainstGoals;
+          t2.Group = evento.Group;
 
         } else if (evento.ScoreHome < evento.ScoreVisitors) {          
           const t1 = this.scoreboardCache.filter((f: IParticipantScorer) => f.participant.id == evento.ParticipantHome.id)[0];
@@ -95,6 +105,7 @@ export class MainService {
           t1.Games++;
           t1.Looses++;
           t1.InvoiceGoals = t1.Goals - t1.AgainstGoals;
+          t1.Group = evento.Group;
 
           t2.Goals = t2.Goals + evento.ScoreVisitors;
           t2.AgainstGoals = t2.AgainstGoals + evento.ScoreHome;
@@ -102,6 +113,7 @@ export class MainService {
           t2.Looses++;
           t2.Points = t2.Points + 3;
           t2.InvoiceGoals = t2.Goals - t2.AgainstGoals;
+          t2.Group = evento.Group;
   
         } else if (evento.ScoreHome == evento.ScoreVisitors) {
           // Empate
@@ -111,6 +123,7 @@ export class MainService {
           t1.Points = t1.Points + 1;
           t1.Draw = t1.Draw + 1;
           t1.InvoiceGoals = t1.Goals - t1.AgainstGoals;
+          t1.Group = evento.Group;
 
           t2.Goals = t2.Goals + evento.ScoreVisitors;
           t2.AgainstGoals = t2.AgainstGoals + evento.ScoreHome;
@@ -118,21 +131,28 @@ export class MainService {
           t2.Points = t2.Points + 1;
           t2.Draw = t2.Draw + 1;
           t2.InvoiceGoals = t2.Goals - t2.AgainstGoals;
+          t2.Group = evento.Group;
         }        
       });
-      const sorted = this.scoreboardCache.sort( (a, b) => a.Points + b.Points );
+      const sorted = this.scoreboardCache.sort( (a, b) =>  a.Points + b.Points);
       this.scoreboard.next(sorted);        
       console.log("SCOREBOARD CACHE => ",sorted);
+      const results = this.groupBy(sorted, i => i.Group);
+      console.log("SCOREBOARD CACHE GROUP BY => ",results);
+      this.scoreboardGroupCache.push(results);
+      //this.scoreboardGrouped.next(this.scoreboardGroupCache);
     });
 
   }
+
 
   createParticipantScorer(participant: IParticipant, Games: number, Wins: number, Draw: number,
                           Looses: number,
                           Goals: number,
                           AgainstGoals: number,
                           InvoiceGoals: number,
-                          Points: number): IParticipantScorer {
+                          Points: number,
+                          Group: string): IParticipantScorer {
 
     const scorer: IParticipantScorer = {
                               participant: participant,
@@ -143,9 +163,14 @@ export class MainService {
                               Goals: Goals,
                               AgainstGoals: AgainstGoals,
                               InvoiceGoals: InvoiceGoals,
-                              Points: Points
+                              Points: Points,
+                              Group: Group
                             };
       return scorer;
+  }
+
+  lerObjecto(obj: object): string {
+    return JSON.stringify(obj);
   }
 
 
