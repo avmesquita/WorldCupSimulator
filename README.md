@@ -7,3 +7,9 @@ Therefore, I decided to create a web project with an Angular frontend to display
 I intend to evolve it over time, without rushing, if anyone is interested in joining this journey of data and calculations from the world of the world cups, I accept a partnership on this journey, even if it is to create issues of possibilities that this project can achieve.
 
 For now I just know that I started a new side project and that it tends to display the basic information about the championship. I have plans to improve the interface and include interactivity with the data so that I can change results using localstorage for multiple users within reach of their own tablet, mobile phone or computer.
+
+![This is an image](/frontend/src/assets/images/screenshots/wcs-games.png)
+
+![This is an image](/frontend/src/assets/images/screenshots/wcs-games.png)
+
+![This is an image](/frontend/src/assets/images/screenshots/wcs-scoreboard.png)
