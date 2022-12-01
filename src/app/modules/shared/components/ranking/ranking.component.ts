@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { MainService } from '../../services/main.service';
 
 @Component({
-  selector: 'app-scoreboard',
-  templateUrl: './scoreboard.component.html',
-  styleUrls: ['./scoreboard.component.scss']
+  selector: 'app-ranking',
+  templateUrl: './ranking.component.html',
+  styleUrls: ['./ranking.component.scss']
 })
-export class ScoreboardComponent {
+export class RankingComponent {
 
   constructor(public mainService: MainService) {}
   

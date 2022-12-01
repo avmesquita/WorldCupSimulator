@@ -27,6 +27,13 @@ export class MainService {
     return groups;
   }, {} as Record<K, T[]>);
 
+  groupBy2 = <T, K extends keyof any>(list: T[], getKey: (item: T) => K) =>
+  list.reduce((previous, currentItem) => {
+    const group = getKey(currentItem);
+    if (!previous[group]) previous[group] = [];
+    previous[group].push(currentItem);
+    return previous;
+  }, {} as Record<K, T[]>);
 
   constructor(private http: HttpClient) { 
     this.loadRefresh(); 
@@ -134,14 +141,22 @@ export class MainService {
           t2.Group = evento.Group;
         }        
       });
+
+      this.scoreboardCache
       const sorted = this.scoreboardCache.sort( (a, b) =>  a.Points + b.Points);
       this.scoreboard.next(sorted);        
       console.log("SCOREBOARD CACHE => ",sorted);
-      const results = this.groupBy(sorted, i => i.Group);
+
+      const reduced = this.scoreboardCache.reduce(this.groupItemRestById, {});
+      console.log("REDUCED => ",reduced);
+
+      const results = this.groupBy2(sorted, i => i.Group);
       console.log("SCOREBOARD CACHE GROUP BY => ",results);
       this.scoreboardGroupCache.push(results);
+      //Record<string, IParticipantScorer[]>
       //this.scoreboardGrouped.next(this.scoreboardGroupCache);
     });
+
 
   }
 
@@ -173,5 +188,13 @@ export class MainService {
     return JSON.stringify(obj);
   }
 
+  groupItemRestById(collector: any, item: any) {
+    const { group, ...rest } = item;
+    const groupList = collector[group] || (collector[group] = []);  
+    groupList.push(rest);
+    return collector;
+  }
+
 
 }
+

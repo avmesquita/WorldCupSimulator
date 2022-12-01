@@ -1,0 +1,53 @@
+.green-color {
+    color: green;
+    font-weight: bolder;
+}
+
+.red-color {
+    color: red;
+    font-weight: bolder;
+}
+
+.blue-color {
+    color: blue;
+    font-weight: bolder;
+}
+
+.blue-color {
+    color: black;
+    font-weight: bolder;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+table {
+    background-color: lightyellow;
+}
+table > thead > th {
+    background-color: black;
+    color: white;
+}
+
+.td-background {
+    background-color: gray!important;    
+}
+
+.team-color {
+    background-color: gray;
+    color: yellow;
+}
+
+.games-color {
+    background-color: lightblue;    
+}
+
+.goals-color {
+    background-color: lightsteelblue;
+}
+
+.points-color {
+    background-color: gray;
+    color: white
+}

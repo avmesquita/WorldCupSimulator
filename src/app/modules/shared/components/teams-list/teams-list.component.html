@@ -1,0 +1,7 @@
+<h1>TEAMS</h1>
+<div style="columns:4">
+    <div *ngFor="let team of (this.mainService.teams$ | async)">
+        <span>{{ team.id }}</span> -
+        <span>{{ team.name}}</span>
+    </div>
+</div>

@@ -1,67 +1,7 @@
-<h1>TEAMS</h1>
-<div style="columns:4">
-    <div *ngFor="let team of (this.mainService.teams$ | async)">
-        <span>{{ team.id }}</span> -
-        <span>{{ team.name}}</span>
-    </div>
-</div>
-<hr>
-
-<h1>GAMES</h1>
-<div style="columns: 2">
-    <div *ngFor="let game of (this.mainService.games$ | async)">
-        <span>{{ game.EventDate }}</span> =>
-        <span>{{ game.ParticipantHome.name }} </span>
-        <span>{{ game.ScoreHome }} </span>
-        <span> X </span>
-        <span>{{ game.ScoreVisitors }} </span>
-        <span>{{ game.ParticipantVisitors.name }} </span>
-        <span></span>
-        <span></span>
-    </div>
-</div>
-<hr>
-
-<h1>scoreboard</h1>
-<div>
-    <table style="width:100%;" cellspacing="2" cellpadding="2" border="1">
-        <thead>
-            <tr>
-                <th>TEAM</th>
-                <th>GAMES</th>
-                <th>WIN</th>
-                <th>DRAW</th>
-                <th>LOSES</th>
-                <th>GOALS</th>
-                <th>AGAINT</th>
-                <th>GOALS RESULT</th>
-                <th>POINTS</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let scoreboard of (this.mainService.scoreboard$ | async)">
-                <td>{{ scoreboard.participant.name }} </td>
-                <td>{{ scoreboard.Games }}</td>
-                <td>{{ scoreboard.Wins }}</td>
-                <td>{{ scoreboard.Draw }}</td>
-                <td>{{ scoreboard.Looses }}</td>
-                <td>{{ scoreboard.Goals }}</td>
-                <td>{{ scoreboard.AgainstGoals }}</td>
-                <td>{{ scoreboard.InvoiceGoals }}</td>
-                <td>{{ scoreboard.Points }}</td>
-            </tr>
-        </tbody>
-    </table>
+<div style="padding-top: 50px;text-align: center;width: 100%;">
+    <h1>Welcome to World Cup Simulator</h1>
 </div>
 
-<hr>
-
-<div>
-    <table>
-        <tr *ngFor="let grouped of (this.mainService.scoreboardGroupCache)">
-            <td>{{ this.mainService.lerObjecto(grouped) }}</td>
-
-        </tr>
-
-    </table>
+<div style="padding-top: 150px;text-align: center;width: 100%;">
+    <h2>Please, select The Menus</h2>
 </div>
