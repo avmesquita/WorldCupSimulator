@@ -8,7 +8,7 @@ I intend to evolve it over time, without rushing, if anyone is interested in joi
 
 For now I just know that I started a new side project and that it tends to display the basic information about the championship. I have plans to improve the interface and include interactivity with the data so that I can change results using localstorage for multiple users within reach of their own tablet, mobile phone or computer.
 
-![This is an image](/frontend/src/assets/images/screenshots/wcs-games.png)
+![This is an image](/frontend/src/assets/images/screenshots/wcs-teams.png)
 
 ![This is an image](/frontend/src/assets/images/screenshots/wcs-games.png)
 
