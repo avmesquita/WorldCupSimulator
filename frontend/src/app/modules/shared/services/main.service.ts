@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, Observable } from 'rxjs';
+import { BehaviorSubject, never, NEVER, Observable } from 'rxjs';
 import { IEvent } from '../interfaces/ievent.interface';
 import { IParticipant } from '../interfaces/iparticipant.interface';
 import { HttpClient } from '@angular/common/http';
@@ -143,7 +143,26 @@ export class MainService {
           t2.Draw = t2.Draw + 1;
           t2.InvoiceGoals = t2.Goals - t2.AgainstGoals;
           t2.Group = evento.Group;
-        }        
+        } else {          
+          // let NUNCA: never;
+          let nevermore: unknown;
+          const result = NEVER.pipe(); 
+          result.subscribe({
+            next: x => console.log("spy against imbeciles... :D - this is X. X became from never. ==> ", x),
+            error: (error: any) => console.log("I never should have landed here. :\\ but this is an error => ", error),
+            complete: () => "But I fell. Congratulations, you have created a code that logically must be quantum. Accepted, true, false and dunno. Congratulations. Quite frankly! :("
+          });
+          function createPair<S, T>(v1: S, v2: T): [S, T] {
+            return [v1, v2];
+          }
+          function createLoggedPair<S extends string | number, T extends string | number>(v1: S, v2: T): [S, T] {
+            console.log(`creating pair: v1='${v1}', v2='${v2}'`);
+            return [v1, v2];
+          }          
+          console.log(createPair<string, number>('hello', 42))
+          console.log(createLoggedPair<string, number>('hello', 42));
+          
+        }
       });
 
       this.scoreboardCache

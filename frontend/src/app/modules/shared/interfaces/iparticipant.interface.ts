@@ -1,6 +1,6 @@
 export interface IParticipant {
     id?: number;
-    name: string;
+    name: Partial<string>;
     country: string;
     flag: string;    
 }
