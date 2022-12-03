@@ -4,14 +4,14 @@ import { IStatistics } from "./istatistics.interface";
 export interface IEvent {
     id?: number;
     EventDate: Date;
-    Location: string;
+    Location: Partial<string>;
     Group: string;
 
-    ParticipantHome: IParticipant;
-    ParticipantVisitors: IParticipant;
+    ParticipantHome: Partial<IParticipant>;
+    ParticipantVisitors: Partial<IParticipant>;
 
     ScoreHome: number;
     ScoreVisitors: number;
 
-    Statistics?: IStatistics;    
+    Statistics?: Partial<IStatistics>;
 }

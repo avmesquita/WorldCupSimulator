@@ -2,13 +2,13 @@
 <div style="columns: 2">
     <div *ngFor="let game of (this.mainService.games$ | async)" class="div-games">
         <span>{{ game.EventDate }}</span> =>
-        <span><img [src]="game.ParticipantHome.flag" /></span>
+        <span><img [src]="game.ParticipantHome.flag" style="height:16px;" /></span>
         <span>{{ game.ParticipantHome.name }} </span>
         <span>{{ game.ScoreHome }} </span>
         <span> X </span>
         <span>{{ game.ScoreVisitors }} </span>
         <span>{{ game.ParticipantVisitors.name }} </span>
-        <span><img [src]="game.ParticipantVisitors.flag" /></span>
+        <span><img [src]="game.ParticipantVisitors.flag" style="height:16px;" /></span>
         <span></span>
         <span></span>
     </div>

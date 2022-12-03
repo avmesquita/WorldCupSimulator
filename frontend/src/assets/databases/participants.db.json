@@ -3,192 +3,192 @@
         "id": 1,
         "name": "Portugal",
         "country": "Portugal",
-        "flag": "/assets/images/flags/32/pt.png"
+        "flag": "/assets/images/countries/flags/4x3/pt.svg"
     },
     {
         "id": 2,
         "name": "Brazil",
         "country": "Brazil",
-        "flag": "/assets/images/flags/32/pt-br.png"
+        "flag": "/assets/images/countries/flags/4x3/br.svg"
     },
     {
         "id": 3,
         "name": "USA",
         "country": "United States of America",
-        "flag": "/assets/images/flags/32/en-us.png"
+        "flag": "/assets/images/countries/flags/4x3/us.svg"
     },
     {
         "id": 4,
-        "name": "Deutchland",
-        "country": "Deutchland",
-        "flag": "/assets/images/flags/32/da.png"
+        "name": "Netherlands",
+        "country": "Netherlands",
+        "flag": "/assets/images/countries/flags/4x3/nl.svg"
     },
     {
         "id": 5,
         "name": "England",
         "country": "England",
-        "flag": "/assets/images/flags/32/kkkkk.png"
+        "flag": "/assets/images/countries/flags/4x3/gb-eng.svg"
     },
     {
         "id": 6,
         "name": "Senegal",
         "country": "Senegal",
-        "flag": "/assets/images/flags/32/kkkkk.png"
+        "flag": "/assets/images/countries/flags/4x3/sn.svg"
     },
     {
         "id": 7,
         "name": "Equador",
         "country": "Equador",
-        "flag": "/assets/images/flags/32/kkkkk.png"
+        "flag": "/assets/images/countries/flags/4x3/ec.svg"
     },
     {
         "id": 8,
         "name": "Catar",
         "country": "Catar",
-        "flag": "/assets/images/flags/32/kkkkk.png"
+        "flag": "/assets/images/countries/flags/4x3/qa.svg"
     },
     {
         "id": 9,
         "name": "Iran",
         "country": "Iran",
-        "flag": "/assets/images/flags/32/fa.png"
+        "flag": "/assets/images/countries/flags/4x3/ir.svg"
     },
     {
         "id": 10,
         "name": "Wales",
         "country": "Wales",
-        "flag": "/assets/images/flags/32/cy.png"
+        "flag": "/assets/images/countries/flags/4x3/gb-wls.svg"
     },
     {
         "id": 11,
         "name": "Polonia",
         "country": "Polonia",
-        "flag": "/assets/images/flags/32/pl.png"
+        "flag": "/assets/images/countries/flags/4x3/pl.svg"
     },
     {
         "id": 12,
         "name": "Argentina",
         "country": "Argentina",
-        "flag": "/assets/images/flags/32/es-ar.png"
+        "flag": "/assets/images/countries/flags/4x3/ar.svg"
     },
     {
         "id": 13,
         "name": "Arábia Saudita",
         "country": "Arábia Saudita",
-        "flag": "/assets/images/flags/32/sd.png"
+        "flag": "/assets/images/countries/flags/4x3/sa.svg"
     },
     {
         "id": 14,
         "name": "Mexico",
         "country": "Mexico",
-        "flag": "/assets/images/flags/32/es-mx.png"
+        "flag": "/assets/images/countries/flags/4x3/mx.svg"
     },
     {
         "id": 15,
         "name": "França",
         "country": "França",
-        "flag": "/assets/images/flags/32/fr.png"
+        "flag": "/assets/images/countries/flags/4x3/fr.svg"
     },
     {
         "id": 16,
         "name": "Australia",
         "country": "Australia",
-        "flag": "/assets/images/flags/32/kkkkk.png"
+        "flag": "/assets/images/countries/flags/4x3/au.svg"
     },
     {
         "id": 17,
         "name": "Tunisia",
         "country": "Tunisia",
-        "flag": "/assets/images/flags/32/tr.png"
+        "flag": "/assets/images/countries/flags/4x3/tn.svg"
     },
     {
         "id": 18,
         "name": "Denmark",
         "country": "Denmark",
-        "flag": "/assets/images/flags/32/da.png"
+        "flag": "/assets/images/countries/flags/4x3/dk.svg"
     },
     {
         "id": 19,
         "name": "Spain",
         "country": "Spain",
-        "flag": "/assets/images/flags/32/es.png"
+        "flag": "/assets/images/countries/flags/4x3/es.svg"
     },
     {
         "id": 20,
         "name": "Japan",
         "country": "Japan",
-        "flag": "/assets/images/flags/32/ja.png"
+        "flag": "/assets/images/countries/flags/4x3/jp.svg"
     },
     {
         "id": 21,
         "name": "Costa Rica",
         "country": "Costa Rica",
-        "flag": "/assets/images/flags/32/kkkkk.png"
+        "flag": "/assets/images/countries/flags/4x3/cr.svg"
     },
     {
         "id": 22,
         "name": "Germany",
         "country": "Germany",
-        "flag": "/assets/images/flags/32/de.png"
+        "flag": "/assets/images/countries/flags/4x3/de.svg"
     },
     {
         "id": 23,
         "name": "Croatia",
         "country": "Croatia",
-        "flag": "/assets/images/flags/32/hr.png"
+        "flag": "/assets/images/countries/flags/4x3/hr.svg"
     },
     {
         "id": 24,
         "name": "Marrocco",
         "country": "Marrocco",
-        "flag": "/assets/images/flags/32/kkkkk.png"
+        "flag": "/assets/images/countries/flags/4x3/ma.svg"
     },
     {
         "id": 25,
         "name": "Belgian",
         "country": "Belgian",
-        "flag": "/assets/images/flags/32/kkkkk.png"
+        "flag": "/assets/images/countries/flags/4x3/be.svg"
     },
     {
         "id": 26,
         "name": "Canada",
         "country": "Canada",
-        "flag": "/assets/images/flags/32/en-ca.png"
+        "flag": "/assets/images/countries/flags/4x3/ca.svg"
     },
     {
         "id": 27,
         "name": "Switzerland",
         "country": "Switzerland",
-        "flag": "/assets/images/flags/32/kkkkk.png"
+        "flag": "/assets/images/countries/flags/4x3/ch.svg"
     },
     {
         "id": 28,
         "name": "Cameroon",
         "country": "Cameroon",
-        "flag": "/assets/images/flags/32/kkkkk.png"
+        "flag": "/assets/images/countries/flags/4x3/cm.svg"
     },
     {
         "id": 29,
         "name": "Serbia",
         "country": "Serbia",
-        "flag": "/assets/images/flags/32/kkkkk.png"
+        "flag": "/assets/images/countries/flags/4x3/sr.svg"
     },
     {
         "id": 30,
         "name": "Gana",
         "country": "Gana",
-        "flag": "/assets/images/flags/32/kkkkk.png"
+        "flag": "/assets/images/countries/flags/4x3/gn.svg"
     },
     {
         "id": 31,
         "name": "South Korea",
         "country": "South Korea",
-        "flag": "/assets/images/flags/32/ko.png"
+        "flag": "/assets/images/countries/flags/4x3/kr.svg"
     },
     {
         "id": 32,
         "name": "Uruguai",
         "country": "Uruguai",
-        "flag": "/assets/images/flags/32/kkkkk.png"
+        "flag": "/assets/images/countries/flags/4x3/uy.svg"
     }
 ]
