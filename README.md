@@ -13,3 +13,6 @@ For now I just know that I started a new side project and that it tends to displ
 ![This is an image](/frontend/src/assets/images/screenshots/wcs-games.png)
 
 ![This is an image](/frontend/src/assets/images/screenshots/wcs-scoreboard.png)
+
+![This is an image](/frontend/src/assets/images/screenshots/wcs-ranking.png)
+
