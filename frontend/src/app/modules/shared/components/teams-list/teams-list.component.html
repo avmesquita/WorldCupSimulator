@@ -1,7 +1,7 @@
 <h1>TEAMS</h1>
 <div style="columns:4">
     <div *ngFor="let team of (this.mainService.teams$ | async)">
-        <span><img [src]="team.flag" /></span>&nbsp;&nbsp;
+        <span><img [src]="team.flag" style="height:16px" /></span>&nbsp;&nbsp;
         <span>{{ team.name}}</span>
     </div>
 </div>
